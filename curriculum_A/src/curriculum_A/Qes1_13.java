@@ -5,17 +5,17 @@ public class Qes1_13 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		//【概要】変数宣言処理
-		//【詳細】ローカル変数に宣言する
-		byte ten;
-		short hyaku;
-		int sen;
-		long man;
-		float syousuu;
-		double syousuuten;
-		char ei;
-		String greeting;
-		boolean bln;
+		//【概要】変数の初期化と宣言処理
+		//【詳細】ローカル変数を初期化と宣言する
+		byte ten = 0;
+		short hyaku = 0;
+		int sen = 0;
+		long man = 0L;
+		float syousuu = 0.0f;
+		double syousuuten = 0.0d;
+		char ei = '\u0000';
+		String greeting = "";
+		boolean bln = false;
 		//【概要】変数初期化と代入処理
 		//【詳細】ローカル変数を初期化し、値を代入する
 		ten = 10;
@@ -30,12 +30,12 @@ public class Qes1_13 {
 		//【概要】コンソール出力処理
 		//【詳細】代入した変数を使用し、コンソールへ出力する
 		System.out.println(ten + hyaku + sen + man);
-		System.out.println(ten *2);
+		System.out.println(ten + ten);
 		System.out.println(ei + greeting + bln);
 		System.out.println(ten + hyaku + sen + man + syousuu + syousuuten);
 		System.out.println(ten * hyaku * sen * man);
-		System.out.println(10.5 / 100);
-		System.out.println(10-100);
+		System.out.println(syousuuten / hyaku);
+		System.out.println(ten - hyaku);
 		//【概要】修正処理
 		//【詳細】ハローJAVA2023からハローJAVA43へ修正する
 		String num = "20";
@@ -82,10 +82,17 @@ public class Qes1_13 {
 		System.out.println("体重は" + (weight) + "kgです");
 		System.out.println("好きな食べ物は" + (like) + "です");
 		System.out.println("BMIは" + String.format("%.2f", (weight / height *100 / height*100))+ "です");
+		//【概要】再代入処理
+		//【詳細】上記で自己代入したものに再代入する
+		old = old - 24;
 		//【概要】条件分岐処理
-		//【詳細】if文を使用せず、trueを返す
+		//【詳細】if文を使用せず、24歳以上ならtrueを返す
 		bln = old >= 25? true : false;
 		System.out.println(bln);
+		//【概要】再代入処理
+		//【詳細】上記で自己代入したものに再代入する
+		height = height - 168.5;
+		weight = weight - 64.2f;
 		//【概要】文字列型への型変換処理
 		//【詳細】年齢・身長・体重をStringへ変換する 
 		String old2 = String.valueOf(old);
