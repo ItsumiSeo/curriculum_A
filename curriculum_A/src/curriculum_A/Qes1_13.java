@@ -14,7 +14,7 @@ public class Qes1_13 {
 		float syousuu = 0.0f;
 		double syousuuten = 0.0d;
 		char ei = '\u0000';
-		String greeting = "";
+		String greeting = null;
 		boolean bln = false;
 		//【概要】変数初期化と代入処理
 		//【詳細】ローカル変数を初期化し、値を代入する
